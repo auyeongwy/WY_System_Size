@@ -18,6 +18,7 @@ int main(int argc, char *argv[])
     printf("%s Integer size: %zd\n", os, sizeof(unsigned int));
     printf("%s Long size: %zd\n", os, sizeof(unsigned long));
     printf("%s Long Long size: %zd\n", os, sizeof(unsigned long long));
+    printf("%s size_t size: %zd\n", os, sizeof(size_t));
     printf("%s Pointer size: %zd\n", os, sizeof(void *));
     return 0;
 }
