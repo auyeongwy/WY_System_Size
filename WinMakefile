@@ -1,0 +1,14 @@
+CC = cl
+CFLAGS = /O2 /W4 /GL /std:c17 /nologo
+ARCH = /favor:INTEL64
+OS = /D_OS_TYPE_=\"Windows\"
+TARGETEXE = WY_System_Size.exe
+
+all: $(TARGETEXE)
+
+$(TARGETEXE): WY_System_Size.c
+	$(CC) $(CFLAGS) $(ARCH) $(OS) WY_System_Size.c /Fe:$(TARGETEXE)
+
+clean:
+	del -f *.obj
+	del -f $(TARGETEXE)

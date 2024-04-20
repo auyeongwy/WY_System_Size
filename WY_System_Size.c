@@ -14,10 +14,10 @@ int main(int argc, char *argv[])
     printf("_OS_TYPE_ not defined in Makefile or src. Assume Unknown OS.\n");
     #endif
 
-    printf("%s Short size: %ld\n", os, sizeof(unsigned short));
-    printf("%s Integer size: %ld\n", os, sizeof(unsigned int));
-    printf("%s Long size: %ld\n", os, sizeof(unsigned long));
-    printf("%s Long Long size: %ld\n", os, sizeof(unsigned long long));
-    printf("%s Pointer size: %ld\n", os, sizeof(void *));
+    printf("%s Short size: %zd\n", os, sizeof(unsigned short));
+    printf("%s Integer size: %zd\n", os, sizeof(unsigned int));
+    printf("%s Long size: %zd\n", os, sizeof(unsigned long));
+    printf("%s Long Long size: %zd\n", os, sizeof(unsigned long long));
+    printf("%s Pointer size: %zd\n", os, sizeof(void *));
     return 0;
 }
