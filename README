@@ -1,0 +1,7 @@
+Simply prints out sizes of different C/C++ data types on the OS this is run on. I used this to confirm type sizes when I was trying to confirm type differences between Linux and Windows.
+
+To compile, just run 'make' on Linux or 'nmake /f WinMakefile' on Windows. Similarly, 'make clean' or 'nmake /f WinMakefile' on the respective OS cleans up the generated output files.  
+
+Simply amend the Makefile or source code to change the OS name printed.
+
+The code is so simple there is not much else to say. It's less than 25 lines and that includes the comment lines and spacing. 
